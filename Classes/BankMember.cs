@@ -11,10 +11,16 @@ namespace ATM_MANGEMENT_SYSYEM.Classes
         private int id;
         private string name;
         private string password;
-        private long balance;
-        private long save;
-        private long loan;
+        private long balance = 0;
+        private long save = 0;
+        private long loan = 0;
+        private List<Transaction> transactions = new List<Transaction>();
 
+        public List<Transaction> getTransactions()
+        {
+            return transactions;
+        }
+      
         public long getBalance() { return balance; }
         public void setBalance(long balance) { this.balance = balance; }
 
@@ -42,6 +48,5 @@ namespace ATM_MANGEMENT_SYSYEM.Classes
             Console.WriteLine("The Validate transaction is done ....");
 
         }
-
     }
 }
