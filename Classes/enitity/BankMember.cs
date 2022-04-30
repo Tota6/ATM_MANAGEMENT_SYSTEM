@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace ATM_MANGEMENT_SYSYEM.Classes
 {
-    class BankMember
+    public class BankMember
     {
         private int id;
         private string name;
         private string password;
-        private long balance;
-        private long save;
-        private long loan;
-
+        private long balance = 0;
+        private long save = 0;
+        private long loan = 0;
+        private long balanceUpdate = 0;
+        
         public long getBalance() { return balance; }
         public void setBalance(long balance) { this.balance = balance; }
 
@@ -32,7 +33,7 @@ namespace ATM_MANGEMENT_SYSYEM.Classes
 
         public long getLoan() { return loan; }
         public void setLoan(long loan) { this.loan = loan; }
-
+       
         public void processRequest()
         {
             Console.WriteLine("The request Process is done ....");
@@ -42,6 +43,5 @@ namespace ATM_MANGEMENT_SYSYEM.Classes
             Console.WriteLine("The Validate transaction is done ....");
 
         }
-
     }
 }
