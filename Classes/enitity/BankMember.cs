@@ -14,7 +14,6 @@ namespace ATM_MANGEMENT_SYSYEM.Classes
         private long balance = 0;
         private long save = 0;
         private long loan = 0;
-        private long balanceUpdate = 0;
         
         public long getBalance() { return balance; }
         public void setBalance(long balance) { this.balance = balance; }
